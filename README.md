@@ -88,3 +88,7 @@ AI Guardian is a multi-agent AI system for cybersecurity, mental wellness, and h
    docker-compose up
    ```
 5. Access the application at http://localhost:3000
+
+## Demo Video
+
+Check out our demo video on YouTube: [AI Guardian Demo](https://youtu.be/OgY9T1N5S_A)
