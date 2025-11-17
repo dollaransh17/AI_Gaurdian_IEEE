@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Custom Robot Design - No Watermarks or Credits -->
+  <defs>
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a5568;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#63b3ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4299e1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="eyeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c3dafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a3bffa;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#63b3ed" flood-opacity="0.5" result="glowColor"/>
+      <feComposite in="glowColor" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Head -->
+  <circle cx="100" cy="60" r="35" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="2"/>
+  
+  <!-- Visor -->
+  <ellipse cx="100" cy="55" rx="25" ry="8" fill="url(#accentGradient)" opacity="0.8"/>
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="50" r="6" fill="url(#eyeGradient)"/>
+  <circle cx="115" cy="50" r="6" fill="url(#eyeGradient)"/>
+  <circle cx="85" cy="50" r="3" fill="#2c5282"/>
+  <circle cx="115" cy="50" r="3" fill="#2c5282"/>
+  
+  <!-- Smile -->
+  <path d="M 85 70 Q 100 80 115 70" stroke="url(#accentGradient)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Antenna -->
+  <line x1="100" y1="25" x2="100" y2="35" stroke="url(#accentGradient)" stroke-width="3"/>
+  <circle cx="100" cy="20" r="4" fill="url(#accentGradient)"/>
+  
+  <!-- Neck -->
+  <rect x="95" y="95" width="10" height="10" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="1"/>
+  
+  <!-- Body -->
+  <rect x="80" y="105" width="40" height="50" rx="15" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="2"/>
+  
+  <!-- Chest Panel -->
+  <rect x="90" y="115" width="20" height="25" rx="3" fill="#1a202c" stroke="#000000" stroke-width="1"/>
+  <circle cx="100" cy="125" r="5" fill="url(#accentGradient)"/>
+  
+  <!-- Data Search Icon on Chest -->
+  <path d="M 95 135 L 105 135 L 107 140 L 93 140 Z" fill="url(#accentGradient)" opacity="0.8"/>
+  <circle cx="100" cy="137" r="2" fill="#ffffff"/>
+  
+  <!-- Arms -->
+  <rect x="60" y="110" width="12" height="35" rx="6" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="2"/>
+  <rect x="128" y="110" width="12" height="35" rx="6" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="2"/>
+  
+  <!-- Hands -->
+  <circle cx="66" cy="150" r="8" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="2"/>
+  <circle cx="134" cy="150" r="8" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="2"/>
+  
+  <!-- Fingers -->
+  <line x1="62" y1="155" x2="58" y2="158" stroke="url(#accentGradient)" stroke-width="2"/>
+  <line x1="70" y1="155" x2="74" y2="158" stroke="url(#accentGradient)" stroke-width="2"/>
+  <line x1="130" y1="155" x2="126" y2="158" stroke="url(#accentGradient)" stroke-width="2"/>
+  <line x1="138" y1="155" x2="142" y2="158" stroke="url(#accentGradient)" stroke-width="2"/>
+  
+  <!-- Legs -->
+  <rect x="85" y="155" width="10" height="30" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="2"/>
+  <rect x="105" y="155" width="10" height="30" fill="url(#bodyGradient)" stroke="#1a202c" stroke-width="2"/>
+  
+  <!-- Feet -->
+  <ellipse cx="90" cy="190" rx="8" ry="3" fill="url(#bodyGradient)"/>
+  <ellipse cx="110" cy="190" rx="8" ry="3" fill="url(#bodyGradient)"/>
+  
+  <!-- Status Lights -->
+  <circle cx="85" cy="110" r="3" fill="#fc8181" filter="url(#glow)"/>
+  <circle cx="115" cy="110" r="3" fill="#68d391" filter="url(#glow)"/>
+  
+  <!-- Floating Animation Circles -->
+  <circle cx="70" cy="70" r="4" fill="#63b3ed" opacity="0.3" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="80" r="3" fill="#4299e1" opacity="0.4" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
