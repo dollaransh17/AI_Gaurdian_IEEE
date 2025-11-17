@@ -12,11 +12,11 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://server-okjppg160-dollaransh17s-projects.vercel.app/api/$1"
+      "dest": "https://server-52qwbs167-dollaransh17s-projects.vercel.app/api/$1"
     },
     {
       "src": "/socket.io/(.*)",
-      "dest": "https://server-okjppg160-dollaransh17s-projects.vercel.app/socket.io/$1"
+      "dest": "https://server-52qwbs167-dollaransh17s-projects.vercel.app/socket.io/$1"
     },
     {
       "src": "/(.*)",
@@ -24,6 +24,6 @@
     }
   ],
   "env": {
-    "VITE_BACKEND_URL": "https://server-okjppg160-dollaransh17s-projects.vercel.app"
+    "VITE_BACKEND_URL": "https://server-52qwbs167-dollaransh17s-projects.vercel.app"
   }
 }
