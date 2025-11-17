@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://server-okjppg160-dollaransh17s-projects.vercel.app/api/$1"
+    },
+    {
+      "src": "/socket.io/(.*)",
+      "dest": "https://server-okjppg160-dollaransh17s-projects.vercel.app/socket.io/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "VITE_BACKEND_URL": "https://server-okjppg160-dollaransh17s-projects.vercel.app"
+  }
+}
