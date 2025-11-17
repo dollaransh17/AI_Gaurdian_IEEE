@@ -6,6 +6,7 @@ import Events from './pages/Events';
 import BusinessInsights from './pages/BusinessInsights';
 import Reports from './pages/Reports';
 import Chatbot from './pages/Chatbot';
+import LoginSignup from './pages/LoginSignup';
 import useSocket from './hooks/useSocket';
 
 function Navigation() {
@@ -87,6 +88,16 @@ function Navigation() {
               >
                 Reports
               </Link>
+              <Link
+                to="/login"
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
+                  isActive('/login')
+                    ? 'bg-gradient-to-r from-gray-500 to-gray-700 text-white shadow-lg shadow-gray-500/50'
+                    : 'text-gray-300 hover:text-white hover:bg-gray-800'
+                }`}
+              >
+                Login
+              </Link>
             </div>
           </div>
           
@@ -127,6 +138,8 @@ function App() {
               <Route path="/chatbot" element={<Chatbot />} />
               <Route path="/business-insights" element={<BusinessInsights />} />
               <Route path="/reports" element={<Reports />} />
+              <Route path="/login" element={<LoginSignup />} />
+              <Route path="/login-signup" element={<LoginSignup />} />
             </Routes>
           </div>
         </main>
